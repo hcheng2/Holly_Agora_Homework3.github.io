@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Agora Video Chat! - Homework#3 </title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="left-pane">
+                <div class="image">
+                    <img src="/Assets/agoraLogo.png" id="logo" alt="Agora Logo">
+                </div>
+                <div id="login">
+                    <span>Join a Chat!</span>
+                    <br>
+                    <input type="text" id="username" placeholder="Enter your username">
+                    <br>
+                    <input type="text" id="channel" placeholder="Enter the channel name">
+                    <br>
+                    <button id="join">Join</button>
+                </div>
+            </div>
+            <div id="right-pane">
+                <div id="self-stream">
+                </div>                
+                <div id="remote-stream">
+                </div>    
+            </div>
+        </div>
+        <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.0.0.js"></script>
+        <script src="/AgoraRTC.js"></script>
+    </body>
+</html>

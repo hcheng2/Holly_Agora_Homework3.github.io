@@ -1,0 +1,99 @@
+#main-container{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    flex-direction: row;
+}
+
+.image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#left-pane{
+  /*  position: fixed;
+    top: 0;
+    left: 0;*/
+    padding: 4px;
+    width: 25%;
+    height: 100vh;
+    box-shadow: 0 0 20px rgb(194, 194, 194);
+    font-size: 1.5rem;
+
+}
+
+#logo{
+    width: 30%;
+    padding: 10px;
+}
+
+#login{
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-right: 5vw;
+}
+
+
+input{
+    margin-top: 20px;
+    font-size: 1rem;
+    border: 2px solid #099dfd;
+    border-radius: 5px;
+    width: 80%
+}
+
+#username{
+    height: 35px;
+}
+
+#channel{
+    height: 35px;
+}
+
+#join{
+    background-color: #099dfd;
+    color: white;
+    font-size: 1rem;
+    margin-top:20px;
+    border-radius: 5px;
+    margin-right:0px;
+    padding-right:0px;
+    width: 30%;
+    height: 35px;
+
+}
+
+#right-pane{
+    flex: 1;
+    height: 100vh;
+/*    
+    border: 2px solid red;
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%*/
+}
+
+#self-stream{
+    border: 2px solid #099dfd;
+    width: 80%;
+    height: 600px;
+    margin-top:50px;
+    border-radius: 5px;
+    margin-left: 50px;
+
+    /*
+        margin: auto;
+    justify-self: center;
+
+    */
+}
+
+#remote-stream{
+    border: 2px solid #099dfd;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 25%;
+    height: 200px;
+}
