@@ -1,3 +1,4 @@
+
 #main-container{
     margin: 0;
     padding: 0;
@@ -12,15 +13,12 @@
 }
 
 #left-pane{
-  /*  position: fixed;
-    top: 0;
-    left: 0;*/
+
     padding: 4px;
     width: 25%;
     height: 100vh;
     box-shadow: 0 0 20px rgb(194, 194, 194);
     font-size: 1.5rem;
-
 }
 
 #logo{
@@ -33,7 +31,6 @@
     margin-left: 2vw;
     margin-right: 5vw;
 }
-
 
 input{
     margin-top: 20px;
@@ -67,12 +64,7 @@ input{
 #right-pane{
     flex: 1;
     height: 100vh;
-/*    
-    border: 2px solid red;
-display: flex;
-    flex-direction: row;
-    align-items: center;
-    width:100%*/
+
 }
 
 #self-stream{
@@ -83,11 +75,7 @@ display: flex;
     border-radius: 5px;
     margin-left: 50px;
 
-    /*
-        margin: auto;
-    justify-self: center;
 
-    */
 }
 
 #remote-stream{
@@ -95,5 +83,45 @@ display: flex;
     margin-left: 50px;
     margin-top: 20px;
     width: 25%;
-    height: 200px;
+    height: 250px;
+}
+
+#self-stream video{
+    position: relative !important;
+}
+
+#remote-stream video{
+    height: auto;
+    position: relative !important;
+}
+
+#sub-container{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+#remote-stream2{
+    border: 2px solid #099dfd;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 25%;
+    height: 250px;
+}
+#remote-stream2 video{
+    height: auto;
+    position: relative !important;
+}
+
+
+#remote-stream3{
+    border: 2px solid #099dfd;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 25%;
+    height: 250px;
+}
+#remote-stream3 video{
+    height: auto;
+    position: relative !important;
 }
