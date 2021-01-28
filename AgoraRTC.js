@@ -53,7 +53,7 @@ document.getElementById("join").onclick = function(){
 
     client.on("stream-added", function(evt){
         client.subscribe(evt.stream, handleFail);
-        addParticipant(evt.username);
+        addParticipant(evt.username);  // Not quite sure how to get the user id from the remote streams. 
     });
     client.on("stream-subscribed", function(evt){
         let stream = evt.stream;
