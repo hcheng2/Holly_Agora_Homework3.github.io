@@ -10,7 +10,6 @@ let remoteContainer2 = document.getElementById("remote-stream2");
 let remoteContainer3 = document.getElementById("remote-stream3");
 
 function addParticipant(name){
-  //  username = document.getElementById("username").value;
     participants += name;
     participants += "<br>";
     document.getElementById("participants").innerHTML = participants;    
@@ -38,7 +37,6 @@ document.getElementById("join").onclick = function(){
     });
     
     client.init(appID);
-  
     username = document.getElementById("username").value;
     addParticipant(username);
 
@@ -55,9 +53,7 @@ document.getElementById("join").onclick = function(){
 
     client.on("stream-added", function(evt){
         client.subscribe(evt.stream, handleFail);
-        let name = evt.stream.getElementById("username").value;
-        console.log(name);
-        addParticipant(name);
+        addParticipant(evt.username);
     });
     client.on("stream-subscribed", function(evt){
         let stream = evt.stream;
